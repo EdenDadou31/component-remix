@@ -1,0 +1,45 @@
+{
+  "name": "base-component",
+  "version": "0.0.1",
+  "description": "First npm package of base component",
+  "type": "module",
+  "author": "Eden Dadou",
+  "license": "Banzai",
+  "source": "src/index.ts",
+  "exports": {
+    "types": "./dist/index.d.ts"
+  },
+  "require": "./dist/index.cjs",
+  "default": "./dist/index.esm.js",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.esm.js",
+  "unpkg": "./dist/index.umd.js",
+  "types": "./dist/index.d.ts",
+  "scripts": {
+    "clean": "rm -rf dist",
+    "build": "npm run clean && microbundle --config microbundle.config.js",
+    "dev": "microbundle watch --config microbundle.config.js"
+  },
+  "dependencies": {
+    "react": "18.3.1",
+    "tailwindcss": "4.0.0-alpha.17",
+    "typescript": "5.5.4",
+    "usehooks-ts": "^3.1.0"
+  },
+  "devDependencies": {
+    "@rollup/plugin-url": "^8.0.2",
+    "@svgr/rollup": "^8.1.0",
+    "@svgr/webpack": "8.1.0",
+    "@types/react": "18.3.3",
+    "@types/react-dom": "18.3.0",
+    "file-loader": "6.2.0",
+    "microbundle": "0.15.1",
+    "rollup": "^2.79.1",
+    "rollup-plugin-svg": "^2.0.0"
+  },
+  "microbundle": {
+    "jsx": "react",
+    "rollup": "rollup.config.js",
+    "format": "modern,cjs,umd"
+  }
+}
