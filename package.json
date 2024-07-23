@@ -1,5 +1,5 @@
 {
-  "name": "base-component",
+  "name": "@edendad/remix-base-component",
   "version": "0.0.1",
   "description": "First npm package of base component",
   "type": "module",
@@ -20,11 +20,10 @@
     "build": "npm run clean && microbundle --config microbundle.config.js",
     "dev": "microbundle watch --config microbundle.config.js"
   },
-  "dependencies": {
-    "react": "18.3.1",
-    "tailwindcss": "4.0.0-alpha.17",
-    "typescript": "5.5.4",
-    "usehooks-ts": "^3.1.0"
+  "peerDependencies": {
+    "react": "^17.0.0 || ^18.0.0",
+    "tailwindcs": "^4.0.0",
+    "typescript": "^4.0.0 || ^5.0.0"
   },
   "devDependencies": {
     "@rollup/plugin-url": "^8.0.2",
