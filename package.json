@@ -1,6 +1,6 @@
 {
   "name": "@edendad/remix-base-component",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "First npm package of base component",
   "type": "module",
   "author": "Eden Dadou",
